@@ -117,6 +117,8 @@ bool HelloWorld::init()
     //}
 	//テクスチャファイル名を指定して、スプライトを作成
 	Sprite*sprite = Sprite::create("PG.png");
+	//シーングラフにつなぐ
+	this->addChild(sprite);
 
     return true;
 }
